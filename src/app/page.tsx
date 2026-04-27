@@ -9,12 +9,12 @@ import {
   Github,
   Linkedin,
   Mail,
-  X,
   ExternalLink,
   Code2,
   Server,
   Globe,
   ArrowUp,
+  Cpu,
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar'
@@ -25,84 +25,102 @@ import {
   SheetClose,
 } from '@/components/ui/sheet'
 
-// ─── Translations ───────────────────────────────────────────────
+// ─── Translations (EN + PT) based on Bruno Paulon's real LinkedIn/GitHub ──
 const translations = {
   en: {
-    hello: 'HELLO, MY NAME IS BRUNO',
-    build: 'And I build websites.',
-    role: 'Full Stack MERN Developer |',
-    stack1: 'MongoDB - Express - React -',
-    stack2: 'Node.js | Creating efficient,',
-    stack3: 'scalable web applications',
-    stack4: 'focused on user experience.',
+    hello: 'HELLO, MY NAME IS BRUNO PAULON',
+    build: 'I build high-performance web applications.',
+    role: 'Full Stack MERN Developer',
+    stack1: 'Node.js · React · Fastify · MongoDB',
+    stack2: 'REST · GraphQL · PWA · IoT',
+    stack3: 'Building scalable, user-centric solutions',
+    stack4: 'with clean architecture.',
     projects: 'Projects',
     about: 'About',
     contact: 'Contact',
     downloadCV: 'Download CV',
     menu: 'Menu',
-    project1Title: 'E-Commerce Platform',
-    project1Desc: 'Full-stack marketplace with real-time inventory, Stripe payments, and admin dashboard built with the MERN stack.',
-    project2Title: 'Task Management App',
-    project2Desc: 'Collaborative project management tool with drag-and-drop boards, real-time updates via WebSocket, and role-based access.',
-    project3Title: 'Analytics Dashboard',
-    project3Desc: 'Data visualization platform with interactive charts, custom report builder, and automated email summaries.',
+    project1Title: 'TaskFlow API',
+    project1Desc: 'A robust Task Management API built with Node.js and Express, designed to streamline workflows and provide seamless integration capabilities for modern applications.',
+    project2Title: 'CRM Pipeline GraphQL API',
+    project2Desc: 'Production-ready CRM pipeline API built with TypeScript and GraphQL, enabling efficient lead management, deal tracking, and sales pipeline automation.',
+    project3Title: 'ERP NextGen',
+    project3Desc: 'Next-generation ERP system for Portugal and Angola featuring invoicing, accounting, and business management — built with TypeScript and a modular architecture.',
+    project4Title: 'Digital Detox App',
+    project4Desc: 'A PWA combating digital addiction using the MERN stack with React, Material UI, Express, MongoDB, and ChatGPT integration for smart behavior insights.',
+    project5Title: 'DocScanNode (OCR Studio)',
+    project5Desc: 'Intelligent document extraction tool powered by Google Cloud Vision API. Automates invoice data extraction with OCR, image upload, and structured data processing.',
+    project6Title: 'BrawlTracker PWA',
+    project6Desc: 'Progressive Web App built with Next.js for tracking Brawl Stars statistics. Players monitor trophy progress, analyze battle history, and receive strategic tips.',
     aboutTitle: 'About Me',
-    aboutText1: 'I\'m a Full Stack Developer passionate about building modern web applications that make a difference. With deep expertise in the MERN stack, I create scalable solutions that prioritize performance and user experience.',
-    aboutText2: 'My journey in software development started with curiosity and evolved into a career dedicated to crafting clean, maintainable code. I believe in continuous learning and staying at the forefront of web technologies.',
-    aboutText3: 'When I\'m not coding, you\'ll find me exploring new frameworks, contributing to open-source projects, or mentoring aspiring developers.',
+    aboutText1: "I'm a Full Stack Developer based in Portugal, currently working as a MERN Stack Engineer at Katonic.ai, where I build Agentic AI solutions and MCPs. With deep expertise in Node.js, React, Fastify, and MongoDB, I craft high-performance applications that scale.",
+    aboutText2: "Graduated in Systems Analysis and Development from Anhanguera, my career spans from building ERPs and CRMs to developing PWAs and OCR-powered tools. I'm passionate about clean architecture, REST and GraphQL APIs, and creating solutions that genuinely improve people's workflows.",
+    aboutText3: "Beyond code, I'm a father, an IoT enthusiast, and a travel lover. I believe technology should serve people — that's why I focus on user-centric development and always push for the best possible experience in every application I build.",
     contactTitle: 'Get In Touch',
-    contactText: 'Have a project in mind or want to collaborate? I\'d love to hear from you. Let\'s build something amazing together.',
+    contactText: "Looking for a Full Stack Developer who cares about performance, clean code, and great user experiences? Let's talk. I'm always open to new challenges and collaboration opportunities.",
     viewProject: 'View Project',
     techStack: 'Tech Stack',
     skills: 'Skills',
-    footerText: 'Designed & Built by Bruno Pal',
+    footerText: 'Designed & Built by Bruno Paulon',
+    terminalLine: '> crafting scalable solutions_',
   },
   pt: {
-    hello: 'OLÁ, MEU NOME É BRUNO',
-    build: 'E eu crio websites.',
-    role: 'Desenvolvedor Full Stack MERN |',
-    stack1: 'MongoDB - Express - React -',
-    stack2: 'Node.js | Criando aplicações',
-    stack3: 'web eficientes e escaláveis',
-    stack4: 'focadas na experiência do usuário.',
+    hello: 'OLÁ, MEU NOME É BRUNO PAULON',
+    build: 'Eu construo aplicações web de alta performance.',
+    role: 'Desenvolvedor Full Stack MERN',
+    stack1: 'Node.js · React · Fastify · MongoDB',
+    stack2: 'REST · GraphQL · PWA · IoT',
+    stack3: 'Construindo soluções escaláveis e centradas',
+    stack4: 'no usuário com arquitetura limpa.',
     projects: 'Projetos',
     about: 'Sobre',
     contact: 'Contato',
     downloadCV: 'Baixar CV',
     menu: 'Menu',
-    project1Title: 'Plataforma E-Commerce',
-    project1Desc: 'Marketplace full-stack com inventário em tempo real, pagamentos Stripe e painel administrativo construído com MERN stack.',
-    project2Title: 'App de Gestão de Tarefas',
-    project2Desc: 'Ferramenta colaborativa de gestão de projetos com boards drag-and-drop, atualizações em tempo real via WebSocket e controle de acesso por função.',
-    project3Title: 'Dashboard de Analytics',
-    project3Desc: 'Plataforma de visualização de dados com gráficos interativos, construtor de relatórios personalizados e resumos automatizados por email.',
+    project1Title: 'TaskFlow API',
+    project1Desc: 'API robusta de Gestão de Tarefas construída com Node.js e Express, projetada para otimizar fluxos de trabalho e fornecer capacidades de integração para aplicações modernas.',
+    project2Title: 'CRM Pipeline GraphQL API',
+    project2Desc: 'API de pipeline CRM pronta para produção, construída com TypeScript e GraphQL, permitindo gestão eficiente de leads, acompanhamento de negócios e automação do pipeline de vendas.',
+    project3Title: 'ERP NextGen',
+    project3Desc: 'Sistema ERP de nova geração para Portugal e Angola com faturação, contabilidade e gestão empresarial — construído com TypeScript e arquitetura modular.',
+    project4Title: 'Digital Detox App',
+    project4Desc: 'PWA de combate ao vício digital usando MERN Stack com React, Material UI, Express, MongoDB e integração ChatGPT para insights inteligentes de comportamento.',
+    project5Title: 'DocScanNode (OCR Studio)',
+    project5Desc: 'Ferramenta inteligente de extração de documentos com Google Cloud Vision API. Automatiza a extração de dados de faturas com OCR, upload de imagens e processamento estruturado.',
+    project6Title: 'BrawlTracker PWA',
+    project6Desc: 'Progressive Web App construída com Next.js para rastrear estatísticas do Brawl Stars. Jogadores monitoram progresso de troféus, analisam histórico de batalhas e recebem dicas estratégicas.',
     aboutTitle: 'Sobre Mim',
-    aboutText1: 'Sou um Desenvolvedor Full Stack apaixonado por criar aplicações web modernas que fazem a diferença. Com expertise profunda no MERN stack, crio soluções escaláveis que priorizam performance e experiência do usuário.',
-    aboutText2: 'Minha jornada no desenvolvimento de software começou com curiosidade e evoluiu para uma carreira dedicada a escrever código limpo e manutenível. Acredito no aprendizado contínuo e em estar na vanguarda das tecnologias web.',
-    aboutText3: 'Quando não estou codando, você me encontra explorando novos frameworks, contribuindo para projetos open-source ou mentorando desenvolvedores aspirantes.',
+    aboutText1: 'Sou um Desenvolvedor Full Stack baseado em Portugal, atualmente trabalhando como MERN Stack Engineer na Katonic.ai, onde construo soluções de Agentic AI e MCPs. Com expertise profunda em Node.js, React, Fastify e MongoDB, crio aplicações de alta performance que escalam.',
+    aboutText2: 'Formado em Análise e Desenvolvimento de Sistemas pela Anhanguera, minha carreira vai da construção de ERPs e CRMs ao desenvolvimento de PWAs e ferramentas com OCR. Sou apaixonado por arquitetura limpa, APIs REST e GraphQL, e por criar soluções que melhoram genuinamente o fluxo de trabalho das pessoas.',
+    aboutText3: 'Além do código, sou pai, entusiasta de IoT e amante de viagens. Acredito que a tecnologia deve servir as pessoas — por isso foco em desenvolvimento centrado no usuário e sempre busco a melhor experiência possível em cada aplicação que construo.',
     contactTitle: 'Entre Em Contato',
-    contactText: 'Tem um projeto em mente ou quer colaborar? Adoraria ouvir você. Vamos construir algo incrível juntos.',
+    contactText: 'Procurando um Desenvolvedor Full Stack que se importa com performance, código limpo e ótimas experiências de usuário? Vamos conversar. Estou sempre aberto a novos desafios e oportunidades de colaboração.',
     viewProject: 'Ver Projeto',
     techStack: 'Stack Tecnológica',
     skills: 'Habilidades',
-    footerText: 'Desenhado & Construído por Bruno Pal',
+    footerText: 'Desenhado & Construído por Bruno Paulon',
+    terminalLine: '> construindo soluções escaláveis_',
   },
 }
 
 type Lang = 'en' | 'pt'
 
-// ─── Project data ───────────────────────────────────────────────
+// ─── Project data (real repos from Bruno's GitHub) ──────────────
 const projects = [
-  { image: '/project1.png', tech: ['MongoDB', 'Express', 'React', 'Node.js', 'Stripe'], github: '#', live: '#' },
-  { image: '/project2.png', tech: ['React', 'Socket.io', 'Node.js', 'MongoDB', 'Tailwind'], github: '#', live: '#' },
-  { image: '/project3.png', tech: ['Next.js', 'D3.js', 'Node.js', 'PostgreSQL', 'Redis'], github: '#', live: '#' },
+  { image: '/project1.png', tech: ['Node.js', 'Express', 'MongoDB', 'REST API'], github: 'https://github.com/bfrpaulondev/API-task-flow', live: '#' },
+  { image: '/project2.png', tech: ['TypeScript', 'GraphQL', 'CRM', 'Pipeline'], github: 'https://github.com/bfrpaulondev/crm-api', live: '#' },
+  { image: '/project3.png', tech: ['TypeScript', 'Next.js', 'ERP', 'Faturação'], github: 'https://github.com/bfrpaulondev/erp-nextgen', live: '#' },
+  { image: '/project4.png', tech: ['React', 'Material UI', 'Express', 'ChatGPT'], github: 'https://github.com/bfrpaulondev/digital-detox-app', live: 'https://digital-detox-app-sigma.vercel.app' },
+  { image: '/project5.png', tech: ['Node.js', 'Google Vision', 'OCR', 'Express'], github: 'https://github.com/bfrpaulondev/DocScanNode', live: '#' },
+  { image: '/project6.png', tech: ['Next.js', 'PWA', 'TypeScript', 'Brawl Stars'], github: 'https://github.com/bfrpaulondev/BrawlTracker', live: '#' },
 ]
 
-// ─── Skill categories ───────────────────────────────────────────
+// ─── Skill categories (based on real profile) ───────────────────
 const skillCategories = [
-  { icon: Code2, label: 'Frontend', items: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'] },
-  { icon: Server, label: 'Backend', items: ['Node.js', 'Express', 'REST APIs', 'GraphQL'] },
-  { icon: Globe, label: 'DevOps', items: ['Docker', 'AWS', 'Vercel', 'CI/CD'] },
+  { icon: Code2, labelEn: 'Frontend', labelPt: 'Frontend', items: ['React', 'Next.js', 'TypeScript', 'Material UI', 'Tailwind CSS'] },
+  { icon: Server, labelEn: 'Backend', labelPt: 'Backend', items: ['Node.js', 'Express', 'Fastify', 'REST APIs', 'GraphQL'] },
+  { icon: Globe, labelEn: 'Cloud & DevOps', labelPt: 'Cloud & DevOps', items: ['Vercel', 'Google Cloud', 'Docker', 'CI/CD'] },
+  { icon: Cpu, labelEn: 'Specialties', labelPt: 'Especialidades', items: ['MERN Stack', 'PWA', 'OCR / Vision AI', 'IoT', 'Agentic AI'] },
 ]
 
 // ─── Main Component ─────────────────────────────────────────────
@@ -136,12 +154,12 @@ export default function Home() {
           {/* Left: Avatar + Name */}
           <div className="flex items-center gap-3">
             <Avatar className="h-9 w-9 ring-2 ring-[#00ff41]/40">
-              <AvatarImage src="/avatar.png" alt="Bruno Pal" />
+              <AvatarImage src="/avatar.png" alt="Bruno Paulon" />
               <AvatarFallback className="bg-[#00ff41]/20 text-[#00ff41] text-sm font-bold">
                 BP
               </AvatarFallback>
             </Avatar>
-            <span className="font-semibold text-sm tracking-wide hidden sm:block">Bruno Pal</span>
+            <span className="font-semibold text-sm tracking-wide hidden sm:block">Bruno Paulon</span>
           </div>
 
           {/* Center: Nav links (desktop) */}
@@ -175,7 +193,7 @@ export default function Home() {
               onClick={() => {
                 const link = document.createElement('a')
                 link.href = '#'
-                link.download = 'BrunoPal_CV.pdf'
+                link.download = 'BrunoPaulon_CV.pdf'
                 link.click()
               }}
             >
@@ -222,7 +240,7 @@ export default function Home() {
                     onClick={() => {
                       const link = document.createElement('a')
                       link.href = '#'
-                      link.download = 'BrunoPal_CV.pdf'
+                      link.download = 'BrunoPaulon_CV.pdf'
                       link.click()
                     }}
                   >
@@ -272,11 +290,11 @@ export default function Home() {
                 </span>
               </div>
 
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+              <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold leading-tight">
                 <span className="text-[#00ff41]">{t.hello}</span>
               </h1>
 
-              <p className="text-2xl sm:text-3xl font-semibold text-[#00ff41]/80">{t.build}</p>
+              <p className="text-xl sm:text-3xl font-semibold text-[#00ff41]/80">{t.build}</p>
 
               <div className="space-y-1 text-gray-400 text-base sm:text-lg leading-relaxed max-w-xl">
                 <p>{t.stack1}</p>
@@ -323,7 +341,7 @@ export default function Home() {
                     <div className="flex items-center gap-2 px-3 py-2 rounded-lg bg-black/60 backdrop-blur-sm border border-white/10">
                       <Code2 className="h-4 w-4 text-[#00ff41]" />
                       <span className="text-xs text-gray-300 font-mono">
-                        &gt; building the future_
+                        {t.terminalLine}
                       </span>
                     </div>
                   </div>
@@ -377,13 +395,13 @@ export default function Home() {
               <div className="space-y-6">
                 <h3 className="text-lg font-semibold text-white mb-4">{t.techStack}</h3>
                 <div className="grid gap-4">
-                  {skillCategories.map(({ icon: Icon, label, items }) => (
-                    <div key={label} className="flex items-start gap-4 p-4 rounded-xl bg-white/[0.03] border border-white/5 hover:border-[#00ff41]/20 transition-colors">
+                  {skillCategories.map(({ icon: Icon, labelEn, labelPt, items }) => (
+                    <div key={labelEn} className="flex items-start gap-4 p-4 rounded-xl bg-white/[0.03] border border-white/5 hover:border-[#00ff41]/20 transition-colors">
                       <div className="p-2.5 rounded-lg bg-[#00ff41]/10">
                         <Icon className="h-5 w-5 text-[#00ff41]" />
                       </div>
                       <div>
-                        <h4 className="font-medium text-white mb-1.5">{label}</h4>
+                        <h4 className="font-medium text-white mb-1.5">{lang === 'en' ? labelEn : labelPt}</h4>
                         <div className="flex flex-wrap gap-2">
                           {items.map((item) => (
                             <span key={item} className="text-xs px-2.5 py-1 rounded-full bg-white/5 text-gray-400 border border-white/5">
@@ -425,7 +443,7 @@ export default function Home() {
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: i * 0.15 }}
+                    transition={{ duration: 0.5, delay: i * 0.1 }}
                     className="group rounded-2xl overflow-hidden bg-white/[0.02] border border-white/5 hover:border-[#00ff41]/30 transition-all duration-500 hover:shadow-lg hover:shadow-[#00ff41]/5"
                   >
                     <div className="relative overflow-hidden h-48">
@@ -438,18 +456,24 @@ export default function Home() {
                       <div className="absolute top-3 right-3 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <a
                           href={project.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="p-2 rounded-full bg-black/60 backdrop-blur-sm border border-white/10 hover:border-[#00ff41]/40 transition-colors"
                           aria-label="GitHub"
                         >
                           <Github className="h-4 w-4 text-white" />
                         </a>
-                        <a
-                          href={project.live}
-                          className="p-2 rounded-full bg-black/60 backdrop-blur-sm border border-white/10 hover:border-[#00ff41]/40 transition-colors"
-                          aria-label="Live Demo"
-                        >
-                          <ExternalLink className="h-4 w-4 text-white" />
-                        </a>
+                        {project.live !== '#' && (
+                          <a
+                            href={project.live}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="p-2 rounded-full bg-black/60 backdrop-blur-sm border border-white/10 hover:border-[#00ff41]/40 transition-colors"
+                            aria-label="Live Demo"
+                          >
+                            <ExternalLink className="h-4 w-4 text-white" />
+                          </a>
+                        )}
                       </div>
                     </div>
                     <div className="p-5 space-y-3">
@@ -498,7 +522,7 @@ export default function Home() {
 
             <div className="flex justify-center gap-4 mb-10">
               <a
-                href="https://github.com"
+                href="https://github.com/bfrpaulondev"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-4 rounded-2xl bg-white/[0.03] border border-white/5 hover:border-[#00ff41]/30 hover:bg-[#00ff41]/5 transition-all duration-300 group"
@@ -506,7 +530,7 @@ export default function Home() {
                 <Github className="h-6 w-6 text-gray-400 group-hover:text-[#00ff41] transition-colors" />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/bruno-paulon-react"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-4 rounded-2xl bg-white/[0.03] border border-white/5 hover:border-[#00ff41]/30 hover:bg-[#00ff41]/5 transition-all duration-300 group"
@@ -514,7 +538,7 @@ export default function Home() {
                 <Linkedin className="h-6 w-6 text-gray-400 group-hover:text-[#00ff41] transition-colors" />
               </a>
               <a
-                href="mailto:bruno@example.com"
+                href="mailto:bruno.paulon.dev@gmail.com"
                 className="p-4 rounded-2xl bg-white/[0.03] border border-white/5 hover:border-[#00ff41]/30 hover:bg-[#00ff41]/5 transition-all duration-300 group"
               >
                 <Mail className="h-6 w-6 text-gray-400 group-hover:text-[#00ff41] transition-colors" />
@@ -522,11 +546,11 @@ export default function Home() {
             </div>
 
             <a
-              href="mailto:bruno@example.com"
+              href="mailto:bruno.paulon.dev@gmail.com"
               className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-[#00ff41] text-black font-semibold hover:bg-[#00ff41]/90 transition-colors"
             >
               <Mail className="h-4 w-4" />
-              bruno@example.com
+              bruno.paulon.dev@gmail.com
             </a>
           </motion.div>
         </div>
@@ -536,7 +560,7 @@ export default function Home() {
       <footer className="border-t border-white/5 py-8">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-gray-600">{t.footerText}</p>
-          <p className="text-xs text-gray-700">© {new Date().getFullYear()}</p>
+          <p className="text-xs text-gray-700">&copy; {new Date().getFullYear()}</p>
         </div>
       </footer>
 

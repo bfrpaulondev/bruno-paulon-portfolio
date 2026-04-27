@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://docs.github.com/en/rest",
+    "name": "GitHub REST API documentation",
+    "snippet": "GitHub REST API documentation. Create integrations, retrieve data, and automate your workflows with the GitHub REST API.",
+    "host_name": "docs.github.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://docs.github.com/rest/projects",
+    "name": "Projects",
+    "snippet": "Get started, troubleshoot, and make the most of GitHub . Documentation for new users, developers, administrators, and all of GitHub's products.",
+    "host_name": "docs.github.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/SagarSuryakantWaghmare/taskflow",
+    "name": "TaskFlow - Modern Task Management Application",
+    "snippet": "A beautiful, modern task management application built with React, Node.js, and MongoDB - The ultimate productivity tool for teams and individuals.",
+    "host_name": "github.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/rishabhgokhe/TaskFlow",
+    "name": "rishabhgokhe/TaskFlow: Project for Task Management",
+    "snippet": "TaskFlow is a powerful and intuitive web application designed to help users manage and organize their tasks efficiently. It provides a user-friendly ...",
+    "host_name": "github.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://docs.github.com/en/issues/planning-and-tracking-with-projects/automating-your-project/using-the-api-to-manage-projects",
+    "name": "Using the API to manage Projects",
+    "snippet": "This article demonstrates how to use the GraphQL API to manage a project. For more information about how to use the API in a GitHub Actions workflow, see ...",
+    "host_name": "docs.github.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://docs.github.com/en/rest/projects/projects",
+    "name": "REST API endpoints for Projects",
+    "snippet": "List all projects owned by a specific user accessible by the authenticated user. Fine-grained access tokens for \"List projects for user\". This endpoint does not ...",
+    "host_name": "docs.github.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/rijonshahariar/taskflow",
+    "name": "TaskFlow is an AI powered productivity web application.",
+    "snippet": "TaskFlow simplifies the process of managing tasks and deadlines, ensuring you stay on top of your work with an intuitive and clean interface.",
+    "host_name": "github.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/IMPHNEN/taskflow-frontend",
+    "name": "IMPHNEN/taskflow-frontend",
+    "snippet": "A modern, AI-powered project management platform designed specifically for solo entrepreneurs. TaskFlow combines intelligent automation with intuitive design to ...",
+    "host_name": "github.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://docs.github.com/en/rest/projects/fields",
+    "name": "REST API endpoints for Project fields",
+    "snippet": "Get a specific field for a user-owned project . Fine-grained access tokens for \"Get project field for user\". This endpoint does not work with GitHub App user ...",
+    "host_name": "docs.github.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/bfrpaulondev/API-task-flow",
+    "name": "GitHub - bfrpaulondev/API-task-flow: A Node.js + Express API",
+    "snippet": "TaskFlow is a powerful Task Management API designed to streamline your workflow, enhance productivity, and provide seamless integration capabilities for your applications.",
+    "host_name": "github.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]
