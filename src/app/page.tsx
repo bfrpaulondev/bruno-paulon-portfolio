@@ -15,6 +15,7 @@ import {
   Globe,
   ArrowUp,
   Cpu,
+  Instagram,
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar'
@@ -41,27 +42,28 @@ const translations = {
     downloadCV: 'Download CV',
     menu: 'Menu',
     project1Title: 'TaskFlow API',
-    project1Desc: 'A robust Task Management API built with Node.js and Express, designed to streamline workflows and provide seamless integration capabilities for modern applications.',
+    project1Desc: 'A robust Task Management API built with Node.js and Express, designed to streamline workflows and provide seamless integration capabilities for modern applications. Features CRUD operations, authentication, and modular route architecture.',
     project2Title: 'CRM Pipeline GraphQL API',
-    project2Desc: 'Production-ready CRM pipeline API built with TypeScript and GraphQL, enabling efficient lead management, deal tracking, and sales pipeline automation.',
+    project2Desc: 'Production-ready CRM pipeline API built with TypeScript and GraphQL, enabling efficient lead management, deal tracking, and sales pipeline automation. Designed for scalability with strongly typed schemas.',
     project3Title: 'ERP NextGen',
-    project3Desc: 'Next-generation ERP system for Portugal and Angola featuring invoicing, accounting, and business management — built with TypeScript and a modular architecture.',
+    project3Desc: 'Next-generation ERP system for Portugal and Angola featuring invoicing, accounting, and business management — built with TypeScript and a modular architecture. Tailored for the Portuguese and Angolan market.',
     project4Title: 'Digital Detox App',
-    project4Desc: 'A PWA combating digital addiction using the MERN stack with React, Material UI, Express, MongoDB, and ChatGPT integration for smart behavior insights.',
+    project4Desc: 'A PWA combating digital addiction using the MERN stack with React, Material UI, Express, MongoDB, and ChatGPT integration for smart behavior insights. Helps users build healthier digital habits.',
     project5Title: 'DocScanNode (OCR Studio)',
-    project5Desc: 'Intelligent document extraction tool powered by Google Cloud Vision API. Automates invoice data extraction with OCR, image upload, and structured data processing.',
+    project5Desc: 'Intelligent document extraction tool powered by Google Cloud Vision API. Automates invoice data extraction with OCR, image upload, and structured data processing for streamlined document workflows.',
     project6Title: 'BrawlTracker PWA',
-    project6Desc: 'Progressive Web App built with Next.js for tracking Brawl Stars statistics. Players monitor trophy progress, analyze battle history, and receive strategic tips.',
+    project6Desc: 'Progressive Web App built with Next.js for tracking Brawl Stars statistics. Players monitor trophy progress, analyze battle history, and receive strategic tips — fully installable on any device.',
     aboutTitle: 'About Me',
-    aboutText1: "I'm a Full Stack Developer based in Portugal, currently working as a MERN Stack Engineer at Katonic.ai, where I build Agentic AI solutions and MCPs. With deep expertise in Node.js, React, Fastify, and MongoDB, I craft high-performance applications that scale.",
-    aboutText2: "Graduated in Systems Analysis and Development from Anhanguera, my career spans from building ERPs and CRMs to developing PWAs and OCR-powered tools. I'm passionate about clean architecture, REST and GraphQL APIs, and creating solutions that genuinely improve people's workflows.",
-    aboutText3: "Beyond code, I'm a father, an IoT enthusiast, and a travel lover. I believe technology should serve people — that's why I focus on user-centric development and always push for the best possible experience in every application I build.",
+    aboutText1: "I'm a Full Stack Developer based in Portugal, currently working at Acidados SA — one of Portugal's leading companies in Information and Communication Technologies. With 5+ years of experience and deep expertise in Node.js, React, Fastify, and MongoDB, I craft high-performance applications that scale and deliver real business value.",
+    aboutText2: "Graduated in Systems Analysis and Development from Anhanguera Educacional, my career spans from building ERPs and CRMs for the Portuguese and Angolan markets to developing PWAs, OCR-powered tools, and REST/GraphQL APIs. I'm passionate about clean architecture, React Server Components, and creating solutions that genuinely improve people's workflows.",
+    aboutText3: "Beyond code, I'm a father, an IoT enthusiast, and a travel lover. I believe technology should serve people — that's why I focus on user-centric development, agile practices (Scrum & Kanban), and always push for the best possible experience in every application I build.",
     contactTitle: 'Get In Touch',
     contactText: "Looking for a Full Stack Developer who cares about performance, clean code, and great user experiences? Let's talk. I'm always open to new challenges and collaboration opportunities.",
     viewProject: 'View Project',
     techStack: 'Tech Stack',
     skills: 'Skills',
     footerText: 'Designed & Built by Bruno Paulon',
+    designCredit: 'Design by',
     terminalLine: '> crafting scalable solutions_',
   },
   pt: {
@@ -78,27 +80,28 @@ const translations = {
     downloadCV: 'Baixar CV',
     menu: 'Menu',
     project1Title: 'TaskFlow API',
-    project1Desc: 'API robusta de Gestão de Tarefas construída com Node.js e Express, projetada para otimizar fluxos de trabalho e fornecer capacidades de integração para aplicações modernas.',
+    project1Desc: 'API robusta de Gestão de Tarefas construída com Node.js e Express, projetada para otimizar fluxos de trabalho e fornecer capacidades de integração para aplicações modernas. Inclui operações CRUD, autenticação e arquitetura modular de rotas.',
     project2Title: 'CRM Pipeline GraphQL API',
-    project2Desc: 'API de pipeline CRM pronta para produção, construída com TypeScript e GraphQL, permitindo gestão eficiente de leads, acompanhamento de negócios e automação do pipeline de vendas.',
+    project2Desc: 'API de pipeline CRM pronta para produção, construída com TypeScript e GraphQL, permitindo gestão eficiente de leads, acompanhamento de negócios e automação do pipeline de vendas. Projetada para escalabilidade com schemas fortemente tipados.',
     project3Title: 'ERP NextGen',
-    project3Desc: 'Sistema ERP de nova geração para Portugal e Angola com faturação, contabilidade e gestão empresarial — construído com TypeScript e arquitetura modular.',
+    project3Desc: 'Sistema ERP de nova geração para Portugal e Angola com faturação, contabilidade e gestão empresarial — construído com TypeScript e arquitetura modular. Adaptado para o mercado português e angolano.',
     project4Title: 'Digital Detox App',
-    project4Desc: 'PWA de combate ao vício digital usando MERN Stack com React, Material UI, Express, MongoDB e integração ChatGPT para insights inteligentes de comportamento.',
+    project4Desc: 'PWA de combate ao vício digital usando MERN Stack com React, Material UI, Express, MongoDB e integração ChatGPT para insights inteligentes de comportamento. Ajuda usuários a construir hábitos digitais mais saudáveis.',
     project5Title: 'DocScanNode (OCR Studio)',
-    project5Desc: 'Ferramenta inteligente de extração de documentos com Google Cloud Vision API. Automatiza a extração de dados de faturas com OCR, upload de imagens e processamento estruturado.',
+    project5Desc: 'Ferramenta inteligente de extração de documentos com Google Cloud Vision API. Automatiza a extração de dados de faturas com OCR, upload de imagens e processamento estruturado para fluxos de trabalho de documentos otimizados.',
     project6Title: 'BrawlTracker PWA',
-    project6Desc: 'Progressive Web App construída com Next.js para rastrear estatísticas do Brawl Stars. Jogadores monitoram progresso de troféus, analisam histórico de batalhas e recebem dicas estratégicas.',
+    project6Desc: 'Progressive Web App construída com Next.js para rastrear estatísticas do Brawl Stars. Jogadores monitoram progresso de troféus, analisam histórico de batalhas e recebem dicas estratégicas — instalável em qualquer dispositivo.',
     aboutTitle: 'Sobre Mim',
-    aboutText1: 'Sou um Desenvolvedor Full Stack baseado em Portugal, atualmente trabalhando como MERN Stack Engineer na Katonic.ai, onde construo soluções de Agentic AI e MCPs. Com expertise profunda em Node.js, React, Fastify e MongoDB, crio aplicações de alta performance que escalam.',
-    aboutText2: 'Formado em Análise e Desenvolvimento de Sistemas pela Anhanguera, minha carreira vai da construção de ERPs e CRMs ao desenvolvimento de PWAs e ferramentas com OCR. Sou apaixonado por arquitetura limpa, APIs REST e GraphQL, e por criar soluções que melhoram genuinamente o fluxo de trabalho das pessoas.',
-    aboutText3: 'Além do código, sou pai, entusiasta de IoT e amante de viagens. Acredito que a tecnologia deve servir as pessoas — por isso foco em desenvolvimento centrado no usuário e sempre busco a melhor experiência possível em cada aplicação que construo.',
+    aboutText1: 'Sou um Desenvolvedor Full Stack baseado em Portugal, atualmente trabalhando na Acidados SA — uma das empresas líderes em Portugal em Tecnologias de Informação e Comunicação. Com mais de 5 anos de experiência e expertise profunda em Node.js, React, Fastify e MongoDB, crio aplicações de alta performance que escalam e entregam real valor de negócio.',
+    aboutText2: 'Formado em Análise e Desenvolvimento de Sistemas pela Anhanguera Educacional, minha carreira vai da construção de ERPs e CRMs para o mercado português e angolano ao desenvolvimento de PWAs, ferramentas com OCR e APIs REST/GraphQL. Sou apaixonado por arquitetura limpa, React Server Components, e por criar soluções que melhoram genuinamente o fluxo de trabalho das pessoas.',
+    aboutText3: 'Além do código, sou pai, entusiasta de IoT e amante de viagens. Acredito que a tecnologia deve servir as pessoas — por isso foco em desenvolvimento centrado no usuário, práticas ágeis (Scrum & Kanban), e sempre busco a melhor experiência possível em cada aplicação que construo.',
     contactTitle: 'Entre Em Contato',
     contactText: 'Procurando um Desenvolvedor Full Stack que se importa com performance, código limpo e ótimas experiências de usuário? Vamos conversar. Estou sempre aberto a novos desafios e oportunidades de colaboração.',
     viewProject: 'Ver Projeto',
     techStack: 'Stack Tecnológica',
     skills: 'Habilidades',
-    footerText: 'Desenhado & Construído por Bruno Paulon',
+    footerText: 'Desenvolvido por Bruno Paulon',
+    designCredit: 'Design por',
     terminalLine: '> construindo soluções escaláveis_',
   },
 }
@@ -115,12 +118,12 @@ const projects = [
   { image: '/project6.png', tech: ['Next.js', 'PWA', 'TypeScript', 'Brawl Stars'], github: 'https://github.com/bfrpaulondev/BrawlTracker', live: '#' },
 ]
 
-// ─── Skill categories (based on real profile) ───────────────────
+// ─── Skill categories (based on real LinkedIn profile) ───────────
 const skillCategories = [
   { icon: Code2, labelEn: 'Frontend', labelPt: 'Frontend', items: ['React', 'Next.js', 'TypeScript', 'Material UI', 'Tailwind CSS'] },
   { icon: Server, labelEn: 'Backend', labelPt: 'Backend', items: ['Node.js', 'Express', 'Fastify', 'REST APIs', 'GraphQL'] },
   { icon: Globe, labelEn: 'Cloud & DevOps', labelPt: 'Cloud & DevOps', items: ['Vercel', 'Google Cloud', 'Docker', 'CI/CD'] },
-  { icon: Cpu, labelEn: 'Specialties', labelPt: 'Especialidades', items: ['MERN Stack', 'PWA', 'OCR / Vision AI', 'IoT', 'Agentic AI'] },
+  { icon: Cpu, labelEn: 'Specialties', labelPt: 'Especialidades', items: ['MERN Stack', 'PWA', 'OCR / Vision AI', 'IoT', 'RSC Architecture'] },
 ]
 
 // ─── Main Component ─────────────────────────────────────────────
@@ -559,7 +562,19 @@ export default function Home() {
       {/* ── Footer ──────────────────────────────────────── */}
       <footer className="border-t border-white/5 py-8">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-gray-600">{t.footerText}</p>
+          <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
+            <p className="text-sm text-gray-600">{t.footerText}</p>
+            <span className="hidden sm:inline text-gray-700">|</span>
+            <a
+              href="https://www.instagram.com/felipe_uxer?igsh=MW5jaWk1OHQ5eWxneQ=="
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-xs text-gray-500 hover:text-[#00ff41] transition-colors"
+            >
+              <Instagram className="h-3.5 w-3.5" />
+              {t.designCredit} @felipe_uxer
+            </a>
+          </div>
           <p className="text-xs text-gray-700">&copy; {new Date().getFullYear()}</p>
         </div>
       </footer>

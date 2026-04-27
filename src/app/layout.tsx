@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Bruno Paulon | Full Stack MERN Developer",
-  description: "Portfolio de Bruno Paulon — Full Stack Developer especializado em Node.js, React, Fastify e MongoDB. Construindo aplicações web de alta performance em Portugal.",
+  description: "Portfolio de Bruno Paulon — Full Stack Developer na Acidados SA, especializado em Node.js, React, Fastify e MongoDB. Construindo aplicações web de alta performance em Portugal.",
   keywords: ["Bruno Paulon", "Full Stack", "MERN", "MongoDB", "Express", "React", "Node.js", "Fastify", "GraphQL", "Developer", "Portugal"],
   authors: [{ name: "Bruno Paulon" }],
   icons: {
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Bruno Paulon | Full Stack MERN Developer",
-    description: "Building high-performance web applications with Node.js, React, Fastify & MongoDB.",
+    description: "Full Stack Developer at Acidados SA, building high-performance web applications with Node.js, React, Fastify & MongoDB.",
     type: "website",
   },
 };
