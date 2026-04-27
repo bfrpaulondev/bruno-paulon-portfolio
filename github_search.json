@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://www.linkedin.com/posts/bruno-paulon-react_api-graphql-rest-activity-7430639296388165632-IxZE",
+    "name": "Bruno Paulon's Post",
+    "snippet": "Bruno Paulon. Full Stack Developer | Node.js • React • Fastify • MongoDB ... Read more",
+    "host_name": "www.linkedin.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/orgs/aspnetrun/followers",
+    "name": "Where software is built",
+    "snippet": "Backend Developer & Cyber security Enthusiast. Crafting secure, scalable systems with Python, Django, C#/.NET while exploring Windows internals and web security. Read more",
+    "host_name": "github.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.facebook.com/groups/ReactJsDevelopersGroup/posts/2935611763279706",
+    "name": "why is my backend giving error when deployed to Vercel",
+    "snippet": "Can someone help me solve the problem of my React.js application working in local mode but not in production mode on Vercell? Read more",
+    "host_name": "www.facebook.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/html/2403.12753v1",
+    "name": "Developing Algorithms for the Internet of Flying Things",
+    "snippet": "Mar 19, 2024 — This work presents GrADyS-SIM NextGen, a framework for simulating distributed algorithms in a simulated network environment populated by nodes capable of ... Read more",
+    "host_name": "arxiv.org",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://pubs.rsc.org/en/content/articlehtml/2025/sc/d4sc06728b",
+    "name": "Recommending reaction conditions with label ranking",
+    "snippet": "2025 · Cited by 3 — Abstract. Pinpointing effective reaction conditions can be challenging, even for reactions with significant precedent. Read more",
+    "host_name": "pubs.rsc.org",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://gist.github.com/bgoonz/059585016cd895265b97460121220d15",
+    "name": "free-programming-books.md",
+    "snippet": "React JS Notes for Professionals - Compiled from StackOverflow Documentation (PDF); React Primer Draft ... Read more",
+    "host_name": "gist.github.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5532576",
+    "name": "Pathogenic Role of IL-17-Producing Immune Cells in Obesity",
+    "snippet": "2017 · Cited by 221 — In this review, we will highlight the pathogenic role of IL-17A producing cells in the mechanisms leading to inflammation in obesity and to progression of ... Read more",
+    "host_name": "pmc.ncbi.nlm.nih.gov",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://digitalcommons.unl.edu/cgi/viewcontent.cgi?article=1284&context=computerscidiss",
+    "name": "How Developers Use Type-system Related Programming",
+    "snippet": "2025 — Optional type annotations are a popular feature of programming languages that allow developers to omit explicit type information in code while, ... Read more",
+    "host_name": "digitalcommons.unl.edu",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://pubs.acs.org/doi/10.1021/acs.chemmater.2c03593",
+    "name": "Self-Driving Laboratory for Polymer Electronics",
+    "snippet": "Mar 9, 2023 — We further discuss our efforts in building an autonomous laboratory, namely Polybot, for the automated synthesis and characterization of electronic polymers. Read more",
+    "host_name": "pubs.acs.org",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://openreview.net/pdf?id=tbiCWZgGD3",
+    "name": "Interpreting and Steering LLMs with Mutual Information-",
+    "snippet": "Cited by 15 — Empirical results show that, compared to baselines, our method provides more discourse-level explanations and effectively steers LLM behaviors to defend against. Read more",
+    "host_name": "openreview.net",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]
