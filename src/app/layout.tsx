@@ -14,16 +14,16 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Bruno Paulon | Full Stack MERN Developer",
-  description: "Portfolio de Bruno Paulon — Full Stack Developer na Acidados SA, especializado em Node.js, React, Fastify e MongoDB. Construindo aplicações web de alta performance em Portugal.",
-  keywords: ["Bruno Paulon", "Full Stack", "MERN", "MongoDB", "Express", "React", "Node.js", "Fastify", "GraphQL", "Developer", "Portugal"],
+  title: "Bruno Paulon | Full Stack Developer",
+  description: "Portfolio de Bruno Paulon — Full Stack Developer com 5+ anos de experiência. Node.js, React, Fastify, MongoDB, PostgreSQL, Angular, ERP/CRM (PHC, SAP, Salesforce). Soluções escaláveis para enterprise e clientes internacionais.",
+  keywords: ["Bruno Paulon", "Full Stack Developer", "Node.js", "React", "Fastify", "MongoDB", "PostgreSQL", "Angular", "TypeScript", "ERP", "CRM", "PHC", "SAP", "Salesforce", "GraphQL", "C#", "ChatGPT API", "Docker", "Portugal"],
   authors: [{ name: "Bruno Paulon" }],
   icons: {
     icon: "/avatar.png",
   },
   openGraph: {
-    title: "Bruno Paulon | Full Stack MERN Developer",
-    description: "Full Stack Developer at Acidados SA, building high-performance web applications with Node.js, React, Fastify & MongoDB.",
+    title: "Bruno Paulon | Full Stack Developer",
+    description: "Full Stack Developer with 5+ years of experience. Expert in Node.js, React, Fastify, MongoDB, PostgreSQL, Angular, and ERP/CRM integrations (PHC, SAP, Salesforce). Building scalable, high-impact solutions for enterprise systems.",
     type: "website",
   },
 };
