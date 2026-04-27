@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "To determine the page/frame names (device options) in the dropdown menu, we list all visible entries:  \n\n1. iPhone 16 393×852  \n2. iPhone 17 402×874  \n3. iPhone 17 Pro 402×874  \n4. iPhone 17 Pro Max 440×956  \n5. iPhone Air 420×912  \n6. More devices  \n7. iPhone 16 Pro 402×874  \n8. iPhone 16 Pro Max 440×956  \n9. iPhone 16 Plus 430×932  \n10. iPhone 15 Pro 393×852  \n11. iPhone 15 393×852  \n12. iPhone 15 Pro Max 430×932  \n13. iPhone 15 Plus 430×932  \n14. iPhone 14 Plus 428×926  \n15. iPhone 14 Pro Max 430×932  \n16. iPhone 14 Pro 393×852  \n17. iPhone 14 390×844  \n18. Android Compact 412×917  \n19. Android Medium 700×840  \n\n\nThere are 19 distinct page/frame names (device options) in the dropdown menu.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1777318965,
+  "id": "20260428034239b1b9500e4e824dad",
+  "model": "glm-4.6v",
+  "object": "chat.completion",
+  "request_id": "20260428034239b1b9500e4e824dad",
+  "usage": {
+    "completion_tokens": 267,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1005,
+    "prompt_tokens_details": {
+      "cached_tokens": 4
+    },
+    "total_tokens": 1272
+  }
+}
