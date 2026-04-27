@@ -543,7 +543,7 @@ export default function Home() {
                 <Linkedin className="h-6 w-6 text-gray-400 group-hover:text-[#00ff41] transition-colors" />
               </a>
               <a
-                href="mailto:bruno.paulon.dev@gmail.com"
+                href="mailto:bfrpaulondev@gmail.com"
                 className="p-4 rounded-2xl bg-white/[0.03] border border-white/5 hover:border-[#00ff41]/30 hover:bg-[#00ff41]/5 transition-all duration-300 group"
               >
                 <Mail className="h-6 w-6 text-gray-400 group-hover:text-[#00ff41] transition-colors" />
@@ -551,11 +551,11 @@ export default function Home() {
             </div>
 
             <a
-              href="mailto:bruno.paulon.dev@gmail.com"
+              href="mailto:bfrpaulondev@gmail.com"
               className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-[#00ff41] text-black font-semibold hover:bg-[#00ff41]/90 transition-colors"
             >
               <Mail className="h-4 w-4" />
-              bruno.paulon.dev@gmail.com
+              bfrpaulondev@gmail.com
             </a>
           </motion.div>
         </div>
