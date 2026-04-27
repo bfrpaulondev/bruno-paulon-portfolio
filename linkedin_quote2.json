@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://www.linkedin.com/posts/bruno-paulon-react_api-graphql-rest-activity-7430639296388165632-IxZE",
+    "name": "Bruno Paulon's Post",
+    "snippet": "REST vs GraphQL - Which one should you actually use? I've built APIs with both for 5+ years. Here's what nobody tells you.\nBruno Paulon, graphic. Bruno Paulon. Full Stack Developer | Node.js • React • Fastify • MongoDB | Building High-Performance Applications. 3w.",
+    "host_name": "www.linkedin.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.cut.ac.cy/digitalAssets/122/122275_1002012-PhD-Dissertation.pdf",
+    "name": "Automatic Tuning of Data-Intensive Analytical Workloads",
+    "snippet": "2012 · Cited by 15 — Programming model and interfaces : Structured Query Language ( SQL ) is the declarative language most widely used for accessing, managing, and analyzing data . Read more",
+    "host_name": "www.cut.ac.cy",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://db.cs.cmu.edu/papers/2024/whatgoesaround-sigmodrec2024.pdf",
+    "name": "What Goes Around Comes Around And Around",
+    "snippet": "2024 · Cited by 58 — ABSTRACT. Two decades ago, one of us co-authored a paper com- menting on the previous 40 years of data modelling re- search and development [188]. Read more 17 pages\n2024 · Cited by 58 — That paper demonstrated that the relational model (RM) and SQL are the prevail- ing choice for database management systems (DBMSs), despite efforts to replace ... Read more 17 pages",
+    "host_name": "db.cs.cmu.edu",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://renata.borovica-gajic.com/data/Thesis_Renata_Borovica_Gajic.pdf",
+    "name": "Toward timely, predictable and cost-effective data analytics",
+    "snippet": "For teaching me ins and outs of database systems, teaching me how to plan and manage my time, and for teaching me life - to be present in each moment and do my ... Read more",
+    "host_name": "renata.borovica-gajic.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.quora.com/How-do-you-become-a-good-software-developer-without-school",
+    "name": "How to become a good software developer without school",
+    "snippet": "You can absolutely, positively become a well-rounded software engineer without college or university. One of the most impressive, well rounded, ... Read more",
+    "host_name": "www.quora.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://scispace.com/pdf/physical-design-tuning-methods-for-emerging-system-1yq9loe4cl.pdf",
+    "name": "physical-design-tuning-methods-for-emerging-system-",
+    "snippet": "Paulson , A. Rasin, D. J. Abadi, D. J. DeWitt, S. Madden, and. M. Stonebraker. A comparison of approaches to large -scale data analysis . In. SIGMOD, 2009. [78] ... Read more",
+    "host_name": "scispace.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.facebook.com/701541899918167/posts/full-stack-software-development-engineer-limassol/3628384430567218",
+    "name": "Full-stack Software Development Engineer, Limassol",
+    "snippet": "Responsibilities: • Design , build, and maintain efficient, reusable, and reliable code • Ensure the best possible performance , quality, and ... Read more",
+    "host_name": "www.facebook.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://publikationen.sulb.uni-saarland.de/bitstream/20.500.11880/26451/1/Thesis_publish.pdf",
+    "name": "OctopusDB: Flexible and Scalable Storage Management for",
+    "snippet": "2012 · Cited by 3 — I have learned many things from him including questioning earlier assumptions, doing things differently each time, and aiming for no less than ... Read more",
+    "host_name": "publikationen.sulb.uni-saarland.de",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://users.soe.ucsc.edu/~jlefevre/jlefevre-dissertation-20140612.pdf",
+    "name": "UNIVERSITY OF CALIFORNIA SANTA",
+    "snippet": "2014 · Cited by 2 — Physical design tuning is key to obtaining good performance for a database management system. Recently, there have been disruptions to the types of data , ... Read more",
+    "host_name": "users.soe.ucsc.edu",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://stackoverflow.com/questions/3346764/should-java-methods-be-static-by-default",
+    "name": "Should Java methods be static by default?",
+    "snippet": "In general, Java methods should not be static by default. Java is an object-oriented language. However, what you talk about is a bit different. Read more",
+    "host_name": "stackoverflow.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]
